@@ -79,7 +79,7 @@ const App = () => {
 
         {/* GitHub Button */}
         <a
-          href="https://github.com/AbhayMishra-starter-template"
+          href="https://github.com/Abdev1205/react-ts-shadcn-template"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 px-4 py-2 mt-4 text-white transition bg-gray-800 rounded-[.5rem] shadow-md hover:bg-gray-700"
