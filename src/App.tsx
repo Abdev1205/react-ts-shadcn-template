@@ -1,9 +1,11 @@
 import { FaGithub } from "react-icons/fa";
+import { Button } from "./components/ui/button";
+import { toast } from "react-hot-toast";
 
 const App = () => {
   return (
     <div className="flex items-center justify-center w-full h-screen bg-gradient-to-r from-gray-100 to-blue-100">
-      <div className="w-[40rem] relative h-[35rem] flex flex-col items-center gap-4 p-6 shadow-lg rounded-xl bg-white">
+      <div className="w-[40rem] relative h-[38rem] flex flex-col items-center gap-4 p-6 shadow-lg rounded-xl bg-white">
         <h2 className="text-center font-[400] font-poppins text-[2rem]">
           Starter Template
         </h2>
@@ -87,6 +89,30 @@ const App = () => {
           <FaGithub />
           GitHub Repository
         </a>
+
+        {/* Taost */}
+        <div className="flex gap-[1rem] items-center justify-center">
+          <Button
+            onClick={() => toast.success("Success Toast")}
+            className="flex items-center gap-2 px-4 py-2 mt-4 text-white transition bg-green-800 rounded-[.5rem] shadow-md hover:bg-green-700"
+          >
+            Success Toast
+          </Button>
+
+          <Button
+            onClick={() => toast.error("Error Toast")}
+            className="flex items-center gap-2 px-4 py-2 mt-4 text-white transition bg-red-800 rounded-[.5rem] shadow-md hover:bg-red-700"
+          >
+            Error Toast
+          </Button>
+
+          <Button
+            onClick={() => toast("Default Toast")}
+            className="flex items-center gap-2 px-4 py-2 mt-4 text-white transition bg-gray-800 rounded-[.5rem] shadow-md hover:bg-gray-700"
+          >
+            Default Toast
+          </Button>
+        </div>
 
         {/* Footer */}
         <footer className="absolute text-sm text-center text-gray-500 bottom-4">

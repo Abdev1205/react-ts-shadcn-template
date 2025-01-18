@@ -1,6 +1,6 @@
 import React from "react";
 import Progress from "@/components/custom/loader/Progress";
-import { ToastContainer } from "react-toastify";
+import { Toaster } from "react-hot-toast";
 
 interface ConfigProviderProps {
   children: React.ReactNode;
@@ -10,17 +10,30 @@ const ConfigProvider: React.FC<ConfigProviderProps> = ({ children }) => {
   return (
     <>
       <Progress>
-        <ToastContainer
+        <Toaster
           position="top-center"
-          autoClose={5000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          theme="light"
+          reverseOrder={false}
+          gutter={8}
+          containerClassName=""
+          containerStyle={{}}
+          toastOptions={{
+            // Define default options
+            className: "",
+            duration: 5000,
+            removeDelay: 1000,
+            style: {
+              background: "#363636",
+              color: "#fff",
+            },
+            // Default options for specific types
+            success: {
+              duration: 3000,
+              iconTheme: {
+                primary: "green",
+                secondary: "black",
+              },
+            },
+          }}
         />
         {children}
       </Progress>
