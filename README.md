@@ -1,50 +1,103 @@
-# React + TypeScript + Vite
+---
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# React + TypeScript + ShadCN Template 🚀  
 
-Currently, two official plugins are available:
+A **starter template** combining the power of **React**, **TypeScript**, **Vite**, **Tailwind CSS**, and **ShadCN** to help you kickstart your next project with ease!  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents  
+- [Features](#features)  
+- [Technologies Used](#technologies-used)  
+- [Getting Started](#getting-started)  
+- [Folder Structure](#folder-structure)  
+- [Demo](#demo)  
+- [License](#license)  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features  
+✅ Pre-configured with **React** and **TypeScript**.  
+✅ Modern styling with **Tailwind CSS**.  
+✅ Component library powered by **ShadCN**.  
+✅ Fast build and dev server with **Vite**.  
+✅ Ready-to-use toast notifications using **React Hot Toast**.  
+✅ Clean and modular folder structure.  
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Technologies Used  
+1. **React** – A JavaScript library for building user interfaces.  
+2. **TypeScript** – A strongly typed programming language that builds on JavaScript.  
+3. **Vite** – A super-fast build tool and development server.  
+4. **Tailwind CSS** – A utility-first CSS framework.  
+5. **ShadCN** – A component library for React and Tailwind CSS.  
+6. **React Icons** – A rich library of icons.  
+7. **React Hot Toast** – For elegant toast notifications.  
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+---
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Getting Started  
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### Prerequisites  
+Ensure you have the following installed:  
+- **Node.js**: [Download Here](https://nodejs.org/)  
+- **Git**: [Download Here](https://git-scm.com/)  
+
+### Installation  
+1. Clone the repository:  
+   ```bash  
+   git clone https://github.com/Abdev1205/react-ts-shadcn-template.git  
+   ```  
+
+2. Navigate to the project directory:  
+   ```bash  
+   cd react-ts-shadcn-template  
+   ```  
+
+3. Install dependencies:  
+   ```bash  
+   npm install  
+   ```  
+
+4. Start the development server:  
+   ```bash  
+   npm run dev  
+   ```  
+
+5. Open your browser and go to `http://localhost:5173`.  
+
+---
+
+## Folder Structure  
+
+```plaintext  
+📦react-ts-shadcn-template  
+ ┣ 📂public              # Public assets  
+ ┣ 📂src  
+ ┃ ┣ 📂components        # Reusable components  
+ ┃ ┃ ┗ 📂ui              # UI components  
+ ┃ ┣ 📂styles           # Tailwind configuration  
+ ┃ ┗ App.tsx            # Main App component  
+ ┣ .gitignore           # Git ignore file  
+ ┣ package.json         # Project dependencies and scripts  
+ ┣ tailwind.config.js   # Tailwind CSS configuration  
+ ┗ vite.config.ts       # Vite configuration  
+```  
+
+---
+
+## Demo  
+Check out the live demo: https://react-ts-shadcn-template.vercel.app/  
+
+
+---
+
+## License  
+This project is licensed under the **MIT License**. Feel free to use and modify it as per your needs.  
+
+---
+
+### Developed with ❤️ by [Abhay Mishra](https://abhaymishra.in)  
+
+---
+
+Let me know if you'd like to add or modify anything further!
