@@ -1,8 +1,8 @@
 ---
 
-# React + TypeScript + ShadCN Template 🚀  
+# Next.js + TypeScript + ShadCN Template 🚀  
 
-A **starter template** combining the power of **React**, **TypeScript**, **Vite**, **Tailwind CSS**, and **ShadCN** to help you kickstart your next project with ease!  
+A **starter template** combining the power of **Next.js**, **TypeScript**, **Tailwind CSS**, and **ShadCN** to help you kickstart your next project with ease!  
 
 ## Table of Contents  
 - [Features](#features)  
@@ -15,23 +15,22 @@ A **starter template** combining the power of **React**, **TypeScript**, **Vite*
 ---
 
 ## Features  
-✅ Pre-configured with **React** and **TypeScript**.  
+✅ Pre-configured with **Next.js** and **TypeScript**.  
 ✅ Modern styling with **Tailwind CSS**.  
 ✅ Component library powered by **ShadCN**.  
-✅ Fast build and dev server with **Vite**.  
+✅ Optimized performance with **Next.js server-side rendering (SSR) & static site generation (SSG)**.  
 ✅ Ready-to-use toast notifications using **React Hot Toast**.  
 ✅ Clean and modular folder structure.  
 
 ---
 
 ## Technologies Used  
-1. **React** – A JavaScript library for building user interfaces.  
+1. **Next.js** – The React framework for production.  
 2. **TypeScript** – A strongly typed programming language that builds on JavaScript.  
-3. **Vite** – A super-fast build tool and development server.  
-4. **Tailwind CSS** – A utility-first CSS framework.  
-5. **ShadCN** – A component library for React and Tailwind CSS.  
-6. **React Icons** – A rich library of icons.  
-7. **React Hot Toast** – For elegant toast notifications.  
+3. **Tailwind CSS** – A utility-first CSS framework.  
+4. **ShadCN** – A component library for Next.js and Tailwind CSS.  
+5. **React Icons** – A rich library of icons.  
+6. **React Hot Toast** – For elegant toast notifications.  
 
 ---
 
@@ -45,12 +44,12 @@ Ensure you have the following installed:
 ### Installation  
 1. Clone the repository:  
    ```bash  
-   git clone https://github.com/Abdev1205/react-ts-shadcn-template.git  
+   git clone https://github.com/Abdev1205/next-ts-shadcn-template.git  
    ```  
 
 2. Navigate to the project directory:  
    ```bash  
-   cd react-ts-shadcn-template  
+   cd next-ts-shadcn-template  
    ```  
 
 3. Install dependencies:  
@@ -63,31 +62,30 @@ Ensure you have the following installed:
    npm run dev  
    ```  
 
-5. Open your browser and go to `http://localhost:5173`.  
+5. Open your browser and go to `http://localhost:3000`.  
 
 ---
 
 ## Folder Structure  
 
 ```plaintext  
-📦react-ts-shadcn-template  
+📆next-ts-shadcn-template  
  ┣ 📂public              # Public assets  
  ┣ 📂src  
  ┃ ┣ 📂components        # Reusable components  
  ┃ ┃ ┗ 📂ui              # UI components  
  ┃ ┣ 📂styles           # Tailwind configuration  
- ┃ ┗ App.tsx            # Main App component  
+ ┃ ┗ 📝app             # Next.js app directory  
  ┣ .gitignore           # Git ignore file  
  ┣ package.json         # Project dependencies and scripts  
  ┣ tailwind.config.js   # Tailwind CSS configuration  
- ┗ vite.config.ts       # Vite configuration  
-```  
+ ┗ next.config.js       # Next.js configuration  
+```
 
 ---
 
 ## Demo  
-Check out the live demo: https://react-ts-shadcn-template.vercel.app/  
-
+Check out the live demo: [https://next-ts-shadcn-template.vercel.app/  ](https://next-ts-shadcn-template.vercel.app/)
 
 ---
 
@@ -100,4 +98,3 @@ This project is licensed under the **MIT License**. Feel free to use and modify 
 
 ---
 
-Let me know if you'd like to add or modify anything further!
